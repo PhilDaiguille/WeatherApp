@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* RESET 2022 */
+html{
+	font-size:62.5%;
+	scroll-behavior:smooth;
+}
+body{
+	font:1.6rem 'Montserrat', sans-serif;
+	margin:0;
+	height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #34495e;
+}
+section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+*{ 
+	box-sizing:border-box;
+}
+button{
+	padding:0;
+	border:0;
+	background-color:transparent;
+}
+.fa-solid.fa-shuffle{
+	font-size: 3rem;
+	position: relative;
+	left: 2rem;
+	cursor: pointer;
+}
+img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	filter: opacity(.1);
+	width: 100%;
+	height: 100%;
+  }
+/*HEADER */
+.container{
+    position: relative;
+    max-width: 55rem;
+	height: 12rem;
+	align-items: center;
+    background: linear-gradient(145deg, #fdffff, #ececec);
+	box-shadow:  20px 20px 60px #e2e2e2,
+             -20px -20px 60px #ffffff;
+    padding: 3rem 6rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    transition: 0.6s ease-out;
+	box-shadow: 0 0 4rem #0000003e;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	
+}
+
+.search-box input{
+    color: #34495e;
+    width: 80%;
+	border-radius: 1rem;
+    font-size: 24px;
+	border: none;
+	margin-left: 1.5rem;
+	outline: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding-left: 5rem;
+	font-weight: 900;
+}
+
+.search-box input::placeholder{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #34495e;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #34495e;
+    border-radius: 25%;
+    font-size: 2.2rem;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background: #34495e;
+}
+
+.search-box i{
+    position: absolute;
+    color: #34495e;
+    font-size: 2.8rem;
+	margin:0 2rem;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 50%;
+    margin: 3rem auto;
+}
+.weather-box .temp{
+	display: flex;
+	justify-content: space-around;
+	margin: 2rem auto;
+	align-items: center;
+}
+.weather-box .temperature{
+    position: relative;
+    color: #34495e;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.weather-box .temperature_min{
+    position: relative;
+    color: #2575c5;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+.weather-box .temperature_max{
+    position: relative;
+    color: #b92424;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: #34495e;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+    margin-top: 2rem;
+}
+
+.weather-details .humidity, .weather-details .wind, .weather-details .pressure,  .weather-details .direction{
+    display: flex;
+    align-items: center;
+    width: 100%;
+	margin: 1rem;
+    height: 10rem;
+}
+
+.weather-details .humidity{
+    justify-content: flex-start;
+}
+
+.weather-details .direction{
+    justify-content: flex-end;
+}
+.weather-details .direction i{
+	color: #34495e;
+}
+.weather-details i{
+    color: #34495e;
+    font-size: 2rem;
+	margin: .5rem 1rem;
+}
+
+.weather-details span{
+    color: #34495e;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color: #34495e;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: #34495e;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+/* MAIN */
+
+
+
+/* FOOTER */
+
+
+
+/* @Copyright - PhilDaiguille*/
