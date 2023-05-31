@@ -40,27 +40,27 @@ const searchCity = async () =>{
 			const rotation = document.querySelector('.weather-details .direction i')
 			switch (json.weather[0].main) {
 				case 'Clear':
-					image.src = '../assets/clear.png';
+					image.src = './assets/clear.png';
 					body.style.background = "#f1c40f"
 					break;
 
 				case 'Rain':
-					image.src = '../assets/rain.png';
+					image.src = './assets/rain.png';
 					body.style.background = "#ecf0f1"
 					break;
 
 				case 'Snow':
-					image.src = '../assets/snow.png';
+					image.src = './assets/snow.png';
 					body.style.background = "#3498db"
 					break;
 
 				case 'Clouds':
-					image.src = '../assets/cloud.png';
+					image.src = './assets/cloud.png';
 					body.style.background = "#95a5a6"
 					break;
 
 				case 'Haze':
-					image.src = '../assets/mist.png';
+					image.src = './assets/mist.png';
 					body.style.background = "#f1c40f"
 					break;
 
