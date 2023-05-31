@@ -55,7 +55,7 @@ video {
 /*HEADER */
 .container{
     position: relative;
-    max-width: 55rem;
+    max-width: 60rem;
 	height: 12rem;
 	align-items: center;
     background: linear-gradient(145deg, #fdffff, #ececec);
