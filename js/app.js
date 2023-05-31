@@ -61,7 +61,7 @@ const searchCity = async () =>{
 
 				case 'Haze':
 					image.src = './assets/mist.png';
-					body.style.background = "#f1c40f"
+					body.style.background = "#25a2b8"
 					break;
 
 				default:
